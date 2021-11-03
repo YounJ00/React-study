@@ -1,20 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {Component} from 'react';
+import MyName from './MyName';
+import Counter from './Counter';
+
 
 class App extends Component {
   render(){
-    const style1 = {
-      backgroundColor: 'black',
-      padding: '16px',
-      color: 'white',
-      fontSize: '12px'
-    };
-
     return(
-      <div style={style1}>
-        hi there
-     </div>
+      <Counter />
     )
   }
 }
