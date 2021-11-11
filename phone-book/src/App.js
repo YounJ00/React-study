@@ -12,6 +12,7 @@ class App extends Component {
         <PhoneForm 
           onCreate={this.handleCreate}
         />
+        <div></div>
       </div>
     );
   }  
