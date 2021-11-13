@@ -15,8 +15,8 @@ class PhoneForm extends Component {
         //원래는 form에서 submit이 발생하면 페이지를 다시 불러오게 되는데요,
         //그렇게 되면 우리가 지니고있는 상태를 다 잃어버리게 되니까 이를 통해서 방지해준다.
         e.preventDefault(); //페이지 리로딩 방지
-        //props로 받은 onCreate함수를 호출한다.
-        this.props.onCreate(this.state); //상태값을 onCreate를 통하여 부모에게 전달
+        //props로 받은 onCreate함수(handleCreate)를 호출한다.
+        this.props.onCreate(this.state); //name,phone 상태값을 onCreate를 통하여 부모에게 전달
         this.setState({
             name: '',
             phone: ''
@@ -43,7 +43,7 @@ class PhoneForm extends Component {
                 <input
                     name="phone"
                     placeholder="전화번호"
-                    value={this.state.phone} //값을 초기화시켜준다.
+                    value={this.state.phone} 
                     onChange={this.handleChange}
                 />
 
