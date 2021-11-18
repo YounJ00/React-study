@@ -22,4 +22,4 @@ class PhoneInfoList extends Component {
     }
 }
 
-export default PhoneInfoList
+export default PhoneInfoList;
